@@ -1,9 +1,14 @@
-let student = {
-  name: "John"
+// Create a JavaScript object called student
+const student = {
+  name: "John Doe"
 };
 
+// Function to get all keys from an object
 function getKeys(obj) {
-    return Object.keys(obj);
+  // Return an array of all the keys in the object
+  return Object.keys(obj);
 }
 
-console.log(getKeys(student)); // ["name"]
+// Test the function
+const keys = getKeys(student);
+console.log(keys); // Expected output: ["name"]
