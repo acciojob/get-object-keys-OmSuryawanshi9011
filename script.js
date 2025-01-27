@@ -1,14 +1,13 @@
 // Create a JavaScript object called student
 const student = {
-  name: "John Doe"
+  name: "John Doe",
+  
+  // Define getKeys as a method of the student object
+  getKeys: function () {
+    return Object.keys(this); // Use 'this' to refer to the current object
+  }
 };
 
-// Function to get all keys from an object
-function getKeys(obj) {
-  // Return an array of all the keys in the object
-  return Object.keys(obj);
-}
-
-// Test the function
-const keys = getKeys(student);
-console.log(keys); // Expected output: ["name"]
+// Test the method
+const keys = student.getKeys();
+console.log(keys); // Expected output: ["name", "getKeys"]
