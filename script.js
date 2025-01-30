@@ -1,13 +1,12 @@
+// Create the student object with a method
 const student = {
   name: "John Doe",
   age: 20,
-  grade: "A"
+  grade: "A",
+  getKeys: function () {
+    return Object.keys(this);
+  }
 };
 
-// Function to get all keys of an object
-function getKeys(obj) {
-  return Object.keys(obj);
-}
-
-// Test the function
-console.log(getKeys(student));
+// Test the method
+console.log(student.getKeys()); // Output: ["name", "age", "grade", "getKeys"]
