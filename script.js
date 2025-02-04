@@ -8,6 +8,9 @@ function getKeys(obj) {
   return Object.keys(obj);
 }
 
+// Example usage
+console.log(getKeys(student)); // Expected output: ["name"]
+
 // Test 1: Object with multiple properties
 const testObject1 = {
   name: "Alice",
